@@ -17,6 +17,12 @@ nav{
             text-decoration: none;
             font-size: 2rem;
             padding: 10px 0;
+            text-shadow: @waterloo 0px 0px;
+            transition: text-shadow .5s ease-out 0s;
+            &:hover{
+                color: @header-font-color;
+                text-shadow: @waterloo 2.5px 5px 5px;
+            }
         }
     }
 }

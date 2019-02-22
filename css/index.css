@@ -184,6 +184,12 @@ nav .links a {
   text-decoration: none;
   font-size: 2rem;
   padding: 10px 0;
+  text-shadow: #81848E 0px 0px;
+  transition: text-shadow 0.5s ease-out 0s;
+}
+nav .links a:hover {
+  color: #23293B;
+  text-shadow: #81848E 2.5px 5px 5px;
 }
 footer {
   color: #22283B;
@@ -241,6 +247,11 @@ footer {
 .home .visit-planets p {
   margin-top: 13px;
 }
+@media (max-width: 500px) {
+  .home .visit-planets {
+    margin-bottom: -20px;
+  }
+}
 .home .walk {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
@@ -279,6 +290,7 @@ footer {
   font-size: 2rem;
   width: 33%;
   border-radius: 5px;
+  transition: background 0.5s ease-out 0s;
 }
 .home .walk .walk-text .btn:hover {
   background: #F6F7F8;
