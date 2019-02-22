@@ -169,7 +169,7 @@ nav {
   align-items: center;
   border-bottom: 2px solid #F1F1F1;
   position: fixed;
-  opacity: 0.75;
+  opacity: 0.95;
 }
 nav h1 {
   font-size: 5rem;
@@ -192,6 +192,13 @@ nav .links a {
 nav .links a:hover {
   color: #23293B;
   text-shadow: #81848E 2.5px 5px 5px;
+}
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
 }
 footer {
   color: #22283B;

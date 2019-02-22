@@ -4,7 +4,7 @@ nav{
     .flex(column, center, center);
     border-bottom: 2px solid @nav-border;
     position: fixed;
-    opacity: .75;
+    opacity: .95;
     h1{
         font-size: 5rem;
         padding: 10px 0;
@@ -27,4 +27,11 @@ nav{
             }
         }
     }
+}
+.sticky{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background: @nav-bg;
+    border-bottom: 2px solid @nav-border;
 }
