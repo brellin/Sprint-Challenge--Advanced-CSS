@@ -1,10 +1,15 @@
-window.onscroll = function(){engage()};
-let navbar = document.getElementsByClassName(links);
-let stick = nav.offsetTop;
-function engage(){
-    if(window.pageYOffset >= stick){
-        navbar.classList.add("sticky");
-    }else{
-        navbar.classList.remove("sticky");
+window.onscroll = function () { engage() };
+let nav = document.getElementsByClassName('links')[0],
+    header = document.getElementsByClassName('intro')[0],
+    sticky = nav.offsetTop;
+let engage = function () {
+    if (window.pageYOffset >= sticky) {
+        nav.classList.add('sticky');
+        nav.classList.remove('links');
+        header.classList.add('no-jump');
+    } else {
+        nav.classList.remove('sticky');
+        nav.classList.add('links');
+        header.classList.remove('no-jump');
     }
 }
