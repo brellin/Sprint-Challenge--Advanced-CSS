@@ -1,1 +1,25 @@
 // Mixins Here
+.flex(@dir, @main, @cross){
+    display: flex;
+    flex-direction: @dir;
+    justify-content: @main;
+    align-items: @cross;
+}
+.butt(@bg, @color){
+    background: @bg;
+    color: @color;
+    padding: 10px 20px;
+    font-size: 2rem;
+    width: 33%;
+    border-radius: 5px;
+    &:hover{
+        background: @color;
+        color: @bg;
+        cursor: pointer;
+    }
+    @media @phone{
+        width: 100%;
+        padding: 25px;
+        text-align: center;
+    }
+}
