@@ -1,0 +1,61 @@
+.contact {
+    .flex(row, space-evenly, space-around);
+    font-size: 1.6rem;
+    h2{
+        border-bottom: 1px solid @border-real;
+    }
+    .intro {
+        width: 100%;
+        .flex(row, center, center);
+        background: linear-gradient(-190deg, @shuttle-gray, @waterloo, @shuttle-gray, @shuttle-gray, @waterloo, @shuttle-gray);
+        border-radius: 50%;
+        h1 {
+            font-size: 11rem;
+        }
+    }
+    .form {
+        width: 45%;
+        white-space: pre-line;
+        input {
+            margin: 5px 15px;
+            padding: 5px;
+            width: 80%;
+            border-radius: 5px 10px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 75px;
+            resize: none;
+            margin: 5px 15px;
+            padding: 5px;
+            width: 80%;
+            border-radius: 5px;
+            box-sizing: border-box;
+            border: 2px inset;
+        }
+    }
+    .cu{
+        width: 45%;
+        white-space: pre-line;
+        address{
+            line-height: 1.25;
+            margin-left: 75px;
+            background-color: slategray;
+            padding: 5px;
+            color: white;
+            display: inline-block;
+            border-radius: 5%;
+            box-shadow: 5px 10px 10px rgb(53, 53, 53);
+            text-shadow: 1px 1px 1px rgb(53, 53, 53);
+        }
+        a{
+            color: @nav-font;
+            text-decoration: none;
+            text-shadow: none;
+            transition: text-shadow .5s ease-out 0s;
+            &:hover{
+                text-shadow: @header-font-color 2.5px 5px 5px;
+            }
+        }
+    }
+}

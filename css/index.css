@@ -186,6 +186,7 @@ nav {
   width: 100%;
   background: #F6F6F6;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -223,6 +224,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 800px;
 }
 .home .intro h2 {
   padding: 15px;
@@ -291,6 +294,7 @@ footer {
     width: 100%;
     padding: 30px 0px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
@@ -345,4 +349,73 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: space-around;
+  font-size: 1.6rem;
+}
+.contact h2 {
+  border-bottom: 1px solid #dee2e6;
+}
+.contact .intro {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-190deg, #5E6164, #81848E, #5E6164, #5E6164, #81848E, #5E6164);
+  border-radius: 50%;
+}
+.contact .intro h1 {
+  font-size: 11rem;
+}
+.contact .form {
+  width: 45%;
+  white-space: pre-line;
+}
+.contact .form input {
+  margin: 5px 15px;
+  padding: 5px;
+  width: 80%;
+  border-radius: 5px 10px;
+  box-sizing: border-box;
+}
+.contact .form textarea {
+  height: 75px;
+  resize: none;
+  margin: 5px 15px;
+  padding: 5px;
+  width: 80%;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 2px inset;
+}
+.contact .cu {
+  width: 45%;
+  white-space: pre-line;
+}
+.contact .cu address {
+  line-height: 1.25;
+  margin-left: 75px;
+  background-color: slategray;
+  padding: 5px;
+  color: white;
+  display: inline-block;
+  border-radius: 5%;
+  box-shadow: 5px 10px 10px #353535;
+  text-shadow: 1px 1px 1px #353535;
+}
+.contact .cu a {
+  color: #454A59;
+  text-decoration: none;
+  text-shadow: none;
+  transition: text-shadow 0.5s ease-out 0s;
+}
+.contact .cu a:hover {
+  text-shadow: #23293B 2.5px 5px 5px;
 }
